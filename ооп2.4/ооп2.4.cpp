@@ -3,7 +3,7 @@
 
 
 class Point {
-protected:
+private:
 	int x, y;
 public:
 
