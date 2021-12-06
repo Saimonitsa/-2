@@ -30,11 +30,17 @@ public:
 		x = x + dx;
 		y = y + dy;
 	}
+	void reset();
 };
+void Point::reset() {
+	x = 0;
+	y = 0;
+}
 
 int main() {
 
 	Point* p = new Point(1, 2);
+	p->reset();
 	p->move(10, 10); // вызываем метод
 	delete p;
 	return 0;
