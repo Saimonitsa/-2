@@ -1,7 +1,7 @@
 ﻿#include <iostream>
 #include <conio.h>
 
-
+//динамические объекты
 class Point {
 
 public:

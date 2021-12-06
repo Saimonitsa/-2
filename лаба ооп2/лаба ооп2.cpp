@@ -101,20 +101,9 @@ public:
 
 int main() {
 	{
-		Point* p = new Point;
-		Point* p2 = new Point(10, 20);
-		Point* p3 = new Point(*p2);
-
-
-		delete p;
-		delete p2;
-		delete p3;
-		//return 0; 
-	}
-	{
 		Point* p = new Point(1, 2);
 		p->reset();
-		p->move(10, 10); // вызываем метод move
+		p->move(10, 10); // вызываем метод
 		delete p;
 		//return 0;
 	}
