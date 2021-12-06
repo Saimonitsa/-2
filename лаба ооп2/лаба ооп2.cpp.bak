@@ -120,7 +120,7 @@ int main() {
 	{
 		Point* p = new Point(1, 2);
 		p->reset();
-		p->move(10, 10); // вызываем метод move
+		p->move(10, 10); // вызываем метод
 		delete p;
 		//return 0;
 	}
