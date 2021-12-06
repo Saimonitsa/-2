@@ -101,12 +101,6 @@ public:
 
 int main() {
 	{
-		Point p;
-		Point p2(10, 20);
-		Point p3(p2);
-		//return 0;
-	}
-	{
 		Point* p = new Point;
 		Point* p2 = new Point(10, 20);
 		Point* p3 = new Point(*p2);
