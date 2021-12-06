@@ -3,7 +3,7 @@
 
 
 class Point {
-private:
+protected:
 	int x, y;
 public:
 
@@ -26,20 +26,17 @@ public:
 		printf("%d, %d\n", x, y);
 		printf("~Point()\n");
 	}
-	
+	void move(int dx, int dy) {
+		x = x + dx;
+		y = y + dy;
+	}
 };
 
 int main() {
-	{
-		Point* p = new Point;
-		Point* p2 = new Point(10, 20);
-		Point* p3 = new Point(*p2);
 
-		p->x;
+	Point* p = new Point(1, 2);
+	p->move(10, 10); // вызываем метод
+	delete p;
+	return 0;
 
-		delete p;
-		delete p2;
-		delete p3;
-		return 0;
-	}
 }
